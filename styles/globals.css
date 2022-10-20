@@ -4,23 +4,84 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    max-width: 100%;
 }
 
-a {
+nav{
+    padding: 0px 32px;
+}
+
+
+.row {
+    margin: 8px auto;
+}
+
+input, textarea {
+    width: 100%;
+}
+
+#response {
+    width: auto;
+    margin-right: 4px;
+}
+
+
+section {
+    margin-bottom: 5vh;
+}
+
+.resume {
   color: inherit;
   text-decoration: none;
+  background: linear-gradient(#0d6efd 70%, white);
 }
 
 * {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+li {
+  list-style-type: none;
+}
+
+@media screen and (min-width: 800px) {
+  .hover_img a {
+    position: relative;
   }
-  body {
-    color: white;
-    background: black;
+
+  .hover_img a span {
+    position: absolute;
+    display: none;
+    z-index: 99;
+  }
+  
+  .hover_img a:hover span {
+    display: block;
   }
 }
+
+@media screen and (max-width: 800px){
+    label .checkbox{
+        width: 100%;
+    }
+    .check-row{
+        text-align: center;
+    }
+}
+
+
+.dark{
+    background-color: #111;
+    color: #d3d3d3;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    img {
+      opacity: .75;
+      transition: opacity .5s ease-in-out;
+    }
+    img:hover {
+      opacity: 1;
+    }
+  }
