@@ -73,7 +73,7 @@ export default function Home() {
               <li>
                 <a
                   className="resume bg-primary text-white px-2 py-1 rounded-2 ms-3"
-                  href={"/Chang_Lee_Resume.pdf"} download="Chang_Resume.pdf" target="_blank">
+                  href={"/Chang_Lee_Resume.pdf"} download="Chang_Resume.pdf" target="_blank" rel="noreferrer">
                   Résumé
                 </a>
               </li>
